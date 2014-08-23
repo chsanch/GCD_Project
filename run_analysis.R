@@ -51,4 +51,4 @@ for(i in 4:ncol(dataMerged)){
 colnames(tidyData)[3:ncol(tidyData)] <- colnames(dataMeanStd)
 tidyData <- data.table(tidyData)
 #writing the final tidy data set to a file
-write.table(tidyData, file = "FinalData.txt")
+write.table(tidyData, row.name=FALSE, file = "FinalData.txt")
